@@ -188,4 +188,13 @@
     items: 1
   });
 
+  // Custom fun
+  var current_date = new Date();
+  var day = current_date.getDay();
+  if (day === 0)
+    day = 7;
+  day = day + 1;
+  $("table tbody tr td:nth-child(" + day +")").addClass("background-blue-td");
+  $("table thead tr th:nth-child(" + day +")").addClass("background-blue-td");
+
 })(jQuery);
