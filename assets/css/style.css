@@ -10,6 +10,11 @@
 --------------------------------------------------------------*/
 
 /* common */
+.box {
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
 .ribbon {
   width: 150px;
   height: 150px;
@@ -36,6 +41,13 @@
   text-shadow: 0 1px 1px rgba(0,0,0,.2);
   text-transform: uppercase;
   text-align: center;
+}
+.ribbon-warning::before,
+.ribbon-warning::after {
+  border: 5px solid #f0ad4e !important;
+}
+.ribbon-warning span {
+  background-color: #f0ad4e !important;
 }
 
 /* top left*/
@@ -104,6 +116,10 @@ div.card-img-top-box {
 
 .background-blue {
     background-color: #0563bb;
+}
+
+.background-warning {
+  background-color: #f0ad4e;
 }
 
 .background-blue-td {
