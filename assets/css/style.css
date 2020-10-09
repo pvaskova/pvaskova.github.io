@@ -44,10 +44,11 @@
 }
 .ribbon-warning::before,
 .ribbon-warning::after {
-  border: 5px solid #f0ad4e !important;
+  border: 5px solid #fff3cd !important;
 }
 .ribbon-warning span {
-  background-color: #f0ad4e !important;
+  background-color: #fff3cd !important;
+  color: black;
 }
 
 /* top left*/
@@ -73,6 +74,13 @@
   top: 30px;
   transform: rotate(-45deg);
 }
+
+.card-warning .card-header {
+  background-color: #fff3cd !important;
+}
+
+
+
 
 [aria-expanded="false"] > .expanded,
 [aria-expanded="true"] > .collapsed {
