@@ -353,6 +353,55 @@ h1, h2, h3, h4, h5, h6 {
   background: #0563bb;
 }
 
+/* gift */
+
+.nav-menu .gift-link:hover, .nav-menu .active > .gift-link, .nav-menu .gift-link:hover > .gift-link, .nav-menu .gift-link, .nav-menu .gift-link span {
+  color: #fff;
+  background: #E40A2D;
+}
+
+.gift-span {
+  color: #fff;
+  background: #E40A2D;
+  align-items: center;
+  padding: 20px;
+  border-radius: 50px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.background-gift {
+  background-color: #E40A2D;
+}
+
+.not-included i {
+  color: #E40A2D;
+}
+
+.not-included span {
+  color: darkgray;
+}
+
+.not-included a {
+  color: #6699cc;
+}
+
+.included i {
+  color: green;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gift-image {
+  width: 100%;
+  margin-top: 50px;
+  box-shadow: 10px 20px 18px #888888;
+}
+
+/* gift-end */
+
 .nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
   color: #fff;
 }
