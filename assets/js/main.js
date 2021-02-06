@@ -28,7 +28,7 @@
 
 
         var cout = 1;
-        $('#hero').css({
+        $('#home').css({
             'background': 'url("' + urls[0] + '") top right no-repeat',
             'width': '100%',
             'height': '100vh',
@@ -37,7 +37,7 @@
             'transition': '3s'
         });
         setInterval(function() {
-            $('#hero').css({
+            $('#home').css({
               'background': 'url("' + urls[cout] + '")  top right no-repeat',
               'width': '100%',
               'height': '100vh',
@@ -47,6 +47,18 @@
             });
             cout == urls.length-1 ? cout = 0 : cout++;
         }, 5000);
+    });
+
+    // hash links
+    $(document).ready(function() {
+        $("nav ul li a").click(function(e) {
+            if(history.pushState) {
+                history.pushState(null, null, $(this).attr("href"));
+            }
+            else {
+                location.hash = $(this).attr("href");
+            }
+        });
     });
 
   // Hero typed
