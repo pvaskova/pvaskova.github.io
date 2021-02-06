@@ -16,6 +16,39 @@
     }
   });
 
+  // Change image
+
+    $(document).ready(function() {
+        var urls = ['assets/img/hero-bg.jpg', 'assets/img/hero2.jpg', 'assets/img/hero3.jpg'];
+
+        urls.forEach(function(img){
+            new Image().src = img;
+            // caches images, avoiding white flash between background replacements
+        });
+
+
+        var cout = 1;
+        $('#hero').css({
+            'background': 'url("' + urls[0] + '") top right no-repeat',
+            'width': '100%',
+            'height': '100vh',
+            'background-size': 'cover',
+            'position': 'relative',
+            'transition': '3s'
+        });
+        setInterval(function() {
+            $('#hero').css({
+              'background': 'url("' + urls[cout] + '")  top right no-repeat',
+              'width': '100%',
+              'height': '100vh',
+              'background-size': 'cover',
+              'position': 'relative',
+              'transition': '3s'
+            });
+            cout == urls.length-1 ? cout = 0 : cout++;
+        }, 5000);
+    });
+
   // Hero typed
   if ($('.typed').length) {
     var typed_strings = $(".typed").data('typed-items');
@@ -24,7 +57,7 @@
       strings: typed_strings,
       loop: true,
       typeSpeed: 100,
-      backSpeed: 50,
+      backSpeed: 25,
       backDelay: 2000
     });
   }
