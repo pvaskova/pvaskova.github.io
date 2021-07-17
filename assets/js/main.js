@@ -49,6 +49,14 @@
         }, 5000);
     });
 
+    // QR generator
+
+    $('#selected_service_qr').change(function () {
+        var price = parseInt($('#selected_service_qr').val());
+        var url = 'http://api.paylibo.com/paylibo/generator/czech/image?accountNumber=1016084266&bankCode=6100&currency=CZK&message=petravaskova.cz&amount=' + price;
+        $('#qr-img').attr("src", url);
+    });
+
     // hash links
     $(document).ready(function() {
         $("nav ul li a").click(function(e) {

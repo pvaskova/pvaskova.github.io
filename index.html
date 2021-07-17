@@ -98,6 +98,8 @@
       <a href="https://www.instagram.com/vaskova.peta/" class="instagram"><i class="bx bxl-instagram"></i></a>
       <a href="https://www.linkedin.com/in/petra-va%C5%A1kov%C3%A1-a22657148/" class="linkedin"><i
               class="bx bxl-linkedin"></i></a>
+      <a href="#qr" data-toggle="modal" data-target="#qr"><i class="icofont-qr-code"></i></a>
+
     </div>
     <div style="margin-top: 50px">
       <button type="button" class="btn btn-outline-primary btn-lg" data-toggle="modal" data-target="#rezervace">
@@ -470,9 +472,9 @@
         <!--2-->
         <div class="col-lg-4 d-flex align-items-stretch" style="margin-top: 30px">
           <div class="card">
-            <!--<div class="ribbon ribbon-top-left">-->
-              <!--<span>Uplynulo</span>-->
-            <!--</div>-->
+            <div class="ribbon ribbon-top-left">
+              <span>Uplynulo</span>
+            </div>
             <div class="card-img-top-box">
               <img class="card-img-top thumb-post" src="assets/img/inbody.jpg" alt="Card image cap">
             </div>
@@ -1061,11 +1063,7 @@
           <p class="about-me">
             Hledáte způsob stravování, kterému byste nemuseli naprosto přizpůsobit svůj životní styl, ale který by se přizpůsobil Vám a&nbsp;zároveň splnil Vaše očekávání?
           </p>
-          <p>
-            <span class="bold">Proč individuální výživový plán?</span>
-          </p>
           <p class="about-me">
-            Ušetřete si roky zbytečných výživových omylů, vyhozených peněz za&nbsp;nekvalitní jídlo, špatné diety nebo pochybné doplňky, které Vám „zaručeně“ pomohou zhubnout. Nechte si&nbsp;sestavit jídelníček na&nbsp;míru ze&nbsp;základních potravin, na&nbsp;základě Vašich tělesných parametrů, pohybové aktivity a&nbsp;dosavadních stravovacích návyků.
             <a href="#diet1" data-toggle="collapse" aria-expanded="false" aria-controls="diet1">
                 <br/>
                 <span class="collapsed bold">+ dozvědět se více</span>
@@ -1075,6 +1073,15 @@
           </p>
           <!-- Collapsed -->
           <div class="collapse" id="diet1">
+            <p>
+              <span class="bold">Proč individuální výživový plán?</span>
+            </p>
+            <p class="about-me">
+              Ušetřete si roky zbytečných výživových omylů, vyhozených peněz za&nbsp;nekvalitní jídlo, špatné diety nebo pochybné doplňky, které Vám „zaručeně“ pomohou zhubnout. Nechte si&nbsp;sestavit jídelníček na&nbsp;míru ze&nbsp;základních potravin, na&nbsp;základě Vašich tělesných parametrů, pohybové aktivity a&nbsp;dosavadních stravovacích návyků.
+            </p>
+            <p class="about-me">
+              Předpokladem úspěšné změny stravovacích návyků, postavy a tím i&nbsp;kvality Vašeho života, je nastavení podmínek, které dokážete dlouhodobě dodržovat a&nbsp;zároveň při tom netrpět. Krátkodobé diety mají ve&nbsp;většině případů jen krátkodobý efekt. Je důležité se&nbsp;zaměřit na způsob stravování, který jste schopni dlouhodobě dodržovat – jen tak se budete cítit zdraví a&nbsp;spokojení se&nbsp;svým tělem.
+            </p>
             <p class="about-me">
               Předpokladem úspěšné změny stravovacích návyků, postavy a tím i&nbsp;kvality Vašeho života, je nastavení podmínek, které dokážete dlouhodobě dodržovat a&nbsp;zároveň při tom netrpět. Krátkodobé diety mají ve&nbsp;většině případů jen krátkodobý efekt. Je důležité se&nbsp;zaměřit na způsob stravování, který jste schopni dlouhodobě dodržovat – jen tak se budete cítit zdraví a&nbsp;spokojení se&nbsp;svým tělem.
             </p>
@@ -1325,6 +1332,38 @@
           <button type="submit" class="btn btn-primary">Rezervovat</button>
         </div>
       </form>
+    </div>
+  </div>
+</div>
+
+
+<!--QR Modal -->
+<div class="modal fade" id="qr" tabindex="-1" role="dialog" aria-labelledby="rezervaceLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="qrLabel">QR platba</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <!--<span>Slouží pro jednoduchou platbu po měření nebo konzultaci.<br/> Není nutné platit předem.</span>-->
+      <select name="service" id="selected_service_qr" class="form-control" required="">
+        <option value="0" selected="" disabled="">Vyberte</option>
+        <option value="300">300, Měření na InBody230</option>
+        <option value="390">390, Měření na InBody230 (2 os.)</option>
+        <option value="150">150, Měření na InBody230 - kontrolní</option>
+        <option value="690">690, Konzultace</option>
+        <option value="990">990, Konzultace (2 os.)</option>
+        <option value="590">590, Konzultace - online</option>
+        <option value="790">790, Konzultace - s měřením na InBody</option>
+        <!--<option value="990">990, Konzultace - pro dva</option>-->
+        <option value="1290">1290, Konzultace (2 os.) - s měřením na InBody</option>
+        <option value="650">650, Jóga</option>
+        <option value="750">750, Jóga - pro dva</option>
+        <option value="0">Jiné</option>
+      </select>
+      <img src="assets/img/qr0.png" id="qr-img">
     </div>
   </div>
 </div>
