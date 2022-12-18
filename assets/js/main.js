@@ -53,7 +53,7 @@
 
     $('#selected_service_qr').change(function () {
         var price = parseInt($('#selected_service_qr').val());
-        var url = 'http://api.paylibo.com/paylibo/generator/czech/image?accountNumber=1016084266&bankCode=6100&currency=CZK&message=petravaskova.cz&amount=' + price;
+        var url = 'http://api.paylibo.com/paylibo/generator/czech/image?accountNumber=1016084266&bankCode=5500&currency=CZK&message=petravaskova.cz&amount=' + price;
         $('#qr-img').attr("src", url);
     });
 
